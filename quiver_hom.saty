@@ -1,5 +1,8 @@
-@import: cs-thesis/cs-thesis
+@import: packages/cs-thesis/cs-thesis
+@require: stdjareport
+@require: math
 @require: itemize
+
 
 document (|
   title-ja = {クイバーの表現上のホモロジー代数};
@@ -48,10 +51,11 @@ document (|
         ${Q = \paren{Q_0, Q_1, s, t}}をクイバーとする。
         このとき${Q_0}の元${v}を\dfn{頂点}、${Q_1}の元${e: x \to y}を\dfn{始点}${x}から\dfn{終点}${y}への\dfn{辺}と呼ぶ。そしてそれぞれ${v \in Q}、${e: x \to y} in ${Q}と略記する。
       }
-      +definition?:({有限クイバー}){huge}
-      +p{
-        このクイバーの定義は次のように見ることでイメージがしやすく成るだろう。
-      }
+    +example{
+      ${Q}を${Q_0 = \brace{1, 2, 3, 4}}、${Q_1 = \brace{\alpha, \beta, \gamma, \lambda, \mu}}、${s\paren{\alpha} = 3}、${s\paren{\beta} = 2}、${s\paren{\gamma} = 3}、${s\paren{\lambda} = 1}、${s\paren{\mu} = 1}で、${t\paren{\alpha} = 2}、${t\paren{\beta} = 1}、${t\paren{\gamma} = 3}、${t\paren{\lambda} = 3}、${t\paren{\mu} = 3}のから成るクイバーとする。これを図示すると次のように成る。(画像なし)
+    }
+
+    
     >
   >
     +chapter{ある加群の圏との同型}<
