@@ -15,7 +15,24 @@ document (|
       これらをそれぞれ一章を使って説明していく。
     }
   >;
-  bibliography = [];
+  bibliography = [
+    (`Ralf2014`,
+      Book(|
+      author = {|Ralf Schiffler|};
+      title = {Quiver Representations (CMS Books in Mathematics) };
+      publisher = {Springer};
+      year = 2014;
+     |)
+     );
+    (`中岡2015`,
+      Book(|
+        author = {|中岡 宏行|};
+        title = {圏論の技法};
+        publisher = {日本評論社};
+        year = 2015;
+      |)
+     );
+  ];
 |)'<
 
   +chapter{クイバーの表現と多元環の対応}<
