@@ -42,30 +42,41 @@ document (|
     +p{
       「クイバーの表現は多元環という代数系の表現と対応していること」を説明していく。そのためにまずクイバーについて説明していく。
     }
-  +section{クイバーの導入}<
-    +definition?:({クイバー}){
+    +section{クイバー}<
+      +definition?:({クイバー}){
        \dfn{クイバー}とは、集合（またはクラス）${Q_0}、${Q_1}とそのあいだの写像${s, t:Q_1 \to Q_0}から成る組${\paren{Q_0, Q_1, s, t}}のことである。
    }
 
-    +definition?:({頂点、矢、始点、終点}){
+      +definition?:({頂点、矢、始点、終点}){
         ${Q = \paren{Q_0, Q_1, s, t}}をクイバーとする。
         このとき${Q_0}の元${v}を\dfn{頂点}、${Q_1}の元${e: x \to y}を\dfn{始点}${x}から\dfn{終点}${y}への\dfn{矢}と呼ぶ。そしてそれぞれ${v \in Q}、${e: x \to y} in ${Q}と略記する。
       }
-    +example{
-      ${Q}を${Q_0 = \brace{1, 2, 3, 4}}、${Q_1 = \brace{\alpha, \beta, \gamma, \lambda, \mu}}、${s\paren{\alpha} = 3}、${s\paren{\beta} = 2}、${s\paren{\gamma} = 3}、${s\paren{\lambda} = 1}、${s\paren{\mu} = 1}で、${t\paren{\alpha} = 2}、${t\paren{\beta} = 1}、${t\paren{\gamma} = 3}、${t\paren{\lambda} = 3}、${t\paren{\mu} = 3}のから成るクイバーとする。これを図示すると次のように成る。(画像なし)
-    }
+      +example{
+        ${Q}を${Q_0 = \brace{1, 2, 3, 4}}、${Q_1 = \brace{\alpha, \beta, \gamma, \lambda, \mu}}、${s\paren{\alpha} = 3}、${s\paren{\beta} = 2}、${s\paren{\gamma} = 3}、${s\paren{\lambda} = 1}、${s\paren{\mu} = 1}で、${t\paren{\alpha} = 2}、${t\paren{\beta} = 1}、${t\paren{\gamma} = 3}、${t\paren{\lambda} = 3}、${t\paren{\mu} = 3}のから成るクイバーとする。これを図示すると次のように成る。(画像なし)
+      }
+      +example{
+        合成と結合法則を忘れることにより任意の圏はクイバーになる。
+        このことから例えば代数的閉体${\mathbb{k}}にたいして左${\mathbb{k}}加群の圏mod${\mathbb{k}}はクイバーである。
+      }
 
-    +p{
-      クイバーの頂点集合と矢集合がともに有限のとき有限クイバーと呼ぶ。そして以降断らない限り考えるクイバーは有限クイバーとする。
-    }
+      +p{
+        クイバーの頂点集合と矢集合がともに有限のとき有限クイバーと呼ぶ。そして以降断らない限り考えるクイバーは有限クイバーとする。
+      }
 
-    +definition?:({クイバー間の写像}){
-      ${Q = \paren{Q_0, Q_1, s, t}}と${Q^\' = \paren{Q^\'_0, Q^\'_1, s^\', t^\'}}をクイバーとする。そして${f_0: Q_0 \to Q^\'_0}と${f_1: Q_1 \to Q^\'_1}の組${f = \paren{f_0, f_1}}が${Q}から${Q^\'}への写像であるというのは次を満たすことを言う。(2つの可換図式の画像)
-      すなわち任意の矢${\alpha: x \to y} in ${Q}に対して${f_1\paren{\alpha}: f_0\paren{x} \to f_0\paren{y}}が成り立つことを言う。
-    }
+      +definition?:({クイバー準同型}){
+        ${Q = \paren{Q_0, Q_1, s, t}}と${Q^\' = \paren{Q^\'_0, Q^\'_1, s^\', t^\'}}をクイバーとする。そして${f_0: Q_0 \to Q^\'_0}と${f_1: Q_1 \to Q^\'_1}の組${f = \paren{f_0, f_1}}が${Q}から${Q^\'}への(準同型)写像であるというのは次を満たすことを言う。(2つの可換図式の画像)
+        すなわち任意の矢${\alpha: x \to y} in ${Q}に対して${f_1\paren{\alpha}: f_0\paren{x} \to f_0\paren{y}}が成り立つことを言う。
+        また、今後${f_0}や${f_1}を${f}と略記する。
+      }
+    >
+    +section{クイバーの表現}<
+      +p{${Q = \paren{Q_0, Q_1, s, t}}をクイバーとする。そして今後クイバー${Q}と書いたらこのように作ったものと考えることにする。}
+      +definition?:({クイバーの表現}){
+        クイバー${Q}の表現とはクイバー準同型${V: Q \to mod\mathbb{k}}で任意の${\alpha} in ${Q}に対して${V\paren{\alpha}}が線形写像に成るものを言う。
+      }
     >
   >
-    +chapter{ある加群の圏との同型}<
+  +chapter{ある加群の圏との同型}<
   >
   +chapter{表現の圏のホモロジー代数}<
   >
