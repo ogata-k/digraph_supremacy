@@ -700,7 +700,7 @@ end = struct
     let ib-num =
       read-inline ctx-title (embed-string (s-num ^ `.`))
         ++ hook-page-break (fun pbinfo _ ->
-             register-cross-reference (`section:` ^ label ^ `:page`) (arabic pbinfo#page-number))
+             register-cross-reference (`section:` ^ label ^ `:page`) (page-number pbinfo))
     in
     let ib-title = read-inline ctx-title title in
     let bb-title = section-heading ctx (ib-num ++ (inline-skip 10pt) ++ ib-title ++ (inline-fil)) in
@@ -718,7 +718,7 @@ end = struct
     let ib-num =
       read-inline ctx-title (embed-string (s-num ^ `.`))
         ++ hook-page-break (fun pbinfo _ ->
-             register-cross-reference (`subsection:` ^ label ^ `:page`) (arabic pbinfo#page-number))
+             register-cross-reference (`subsection:` ^ label ^ `:page`) (page-number pbinfo))
     in
     let ib-title = read-inline ctx-title title in
     let bb-title =
