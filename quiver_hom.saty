@@ -74,11 +74,15 @@ document (|
       +definition?:({クイバーの表現}){
         クイバー${Q}の$\mathbb{R}$上表現とはクイバー準同型${V: Q \to mod\mathbb{R}}で任意の${\alpha: x \to y} in ${Q}に対して${V\paren{\alpha}: V\paren{x} \to V\paren{y}}が$\mathbb{R}$-線形写像に成るものを言う。
       }
-      +p{このクイバーの表現は圏論で言う関手のようなものである。そして以下では$\mathbb{R}$を体$\mathbb{K}$とし、単に表現と呼ぶ。}
-      +definition?:({表現間の写像}){
-        線形写像の族${f = \paren{f_x: V\paren{x} \to V^\'\paren{x}}_{x \in Q}}がクイバー${Q}の表現${V}から表現${V^\'}への写像であるとは任意の${\alpha: x \to y} in ${Q}に対して次の図式を可換にするものを言う。(可換図式の画像なし)
+      +p{このクイバーの$\mathbb{R}$上表現は圏論で言う関手のようなものである。}
+      +definition?:({$\mathbb{R}$上表現間の写像}){
+        ${Q}$をクイバーとする。線形写像の族${f = \paren{f_x: V\paren{x} \to V^\'\paren{x}}_{x \in Q}}が$\mathbb{R}$上表現${V}から$\mathbb{R}$上表現${V^\'}への写像であるとは任意の${\alpha: x \to y} in ${Q}に対して次の図式を可換にするものを言う。(可換図式の画像なし)
       }
       +p{この表現間の写像は圏論でいう自然変換のようなものである。}
+      +definition?:(表現の写像の左$\mathbb{R}$作用){
+        表現間の写像の左$\mathbb{R}$作用を%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+      }
+      +p{そして以下では$\mathbb{R}$を体$\mathbb{K}$とし、単に表現と呼ぶ。}
       +definition?:({クイバーの表現の圏}){}
     >
     +section{関係付きクイバー}<
