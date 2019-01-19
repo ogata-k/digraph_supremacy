@@ -70,19 +70,19 @@ document (|
       }
     >
     +section{クイバーの表現}<
-      +p{$R$を環とし、${Q = \paren{Q_0, Q_1, s, t}}をクイバーとする。そして以下ではクイバー${Q}と書いたらこのように作ったものと考えることにする。}
+      +p{${\mathbb{R}}を環とし、${Q = \paren{Q_0, Q_1, s, t}}をクイバーとする。そして以下ではクイバー${Q}と書いたらこのように表記したものとする。}
       +definition?:({クイバーの表現}){
-        クイバー${Q}の$\mathbb{R}$上表現とはクイバー準同型${V: Q \to mod\mathbb{R}}で任意の${\alpha: x \to y} in ${Q}に対して${V\paren{\alpha}: V\paren{x} \to V\paren{y}}が$\mathbb{R}$-線形写像に成るものを言う。
+        クイバー${Q}の${\mathbb{R}}上表現とはクイバー準同型${V: Q \to mod\mathbb{R}}で任意の${\alpha: x \to y} in ${Q}に対して${V\paren{\alpha}: V\paren{x} \to V\paren{y}}が${\mathbb{R}}-線形写像に成るものを言う。
       }
-      +p{このクイバーの$\mathbb{R}$上表現は圏論で言う関手のようなものである。}
-      +definition?:({$\mathbb{R}$上表現間の写像}){
-        ${Q}$をクイバーとする。線形写像の族${f = \paren{f_x: V\paren{x} \to V^\'\paren{x}}_{x \in Q}}が$\mathbb{R}$上表現${V}から$\mathbb{R}$上表現${V^\'}への写像であるとは任意の${\alpha: x \to y} in ${Q}に対して次の図式を可換にするものを言う。(可換図式の画像なし)
+      +p{このクイバーの${\mathbb{R}}上表現は圏論で言う関手のようなものである。}
+      +definition?:({${\mathbb{R}}上表現間の写像}){
+        ${Q}をクイバーとする。線形写像の族${f = \paren{f_x: V\paren{x} \to V^\'\paren{x}}_{x \in Q}}が${\mathbb{R}}上表現${V}から${\mathbb{R}}上表現${V^\'}への写像であるとは任意の${\alpha: x \to y} in ${Q}に対して次の図式を可換にするものを言う。(可換図式の画像なし)
       }
       +p{この表現間の写像は圏論でいう自然変換のようなものである。}
-      +definition?:(表現の写像の左$\mathbb{R}$作用){
-        表現間の写像の左$\mathbb{R}$作用を%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+      +definition?:({表現の写像の左${\mathbb{R}}作用}){
+        表現間の写像の左${\mathbb{R}}作用を%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
       }
-      +p{そして以下では$\mathbb{R}$を体$\mathbb{K}$とし、単に表現と呼ぶ。}
+      +p{そして以下では${\mathbb{R}}を体${\mathbb{K}}とし、単に表現と呼ぶ。}
       +definition?:({クイバーの表現の圏}){}
     >
     +section{関係付きクイバー}<
@@ -94,20 +94,21 @@ document (|
       +definition?:({関係付きクイバーの表現の圏}){}
     >
     +section{${\mathbb{K}}-多元環}<
-      +definition?:({$\mathbb{K}$-多元環}){}
+      +definition?:({${\mathbb{K}}-多元環}){}
       +theorem{有向閉路がないクイバーから多元環を生成する}
+      % 下に出てくる11.2や17.5はゼミのテキストを参照のこと
       +lemma{11.2}
     >
     +theorem{Thm17.5(クイバーとそれから生成される多元環の自然同型)}
   >
   +chapter{表現の圏のホモロジー代数について}<
     +section{圏論におけるホモロジー代数}<
-      +defintion?:({$mathbb{R}$-線形圏}){プレ版の解説も} 
+      +definition?:({${\mathbb{R}}-線形圏}){プレ版の解説も} 
       +p{加法圏}
-      +defintion?:({アーベル圏}){プレ版の解説も}
+      +definition?:({アーベル圏}){プレ版の解説も}
     >
     +section{クイバーの表現の圏におけるホモロジー代数}<
-      +theorem{クイバー$Q$の表現の圏はアーベル圏である}
+      +theorem{クイバー${Q}の表現の圏はアーベル圏である}
     >
     +section{関係付きクイバーの表現の圏におけるホモロジー代数}<
       
