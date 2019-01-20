@@ -1,4 +1,4 @@
-@import: packages/cs-thesis/cs-thesis
+@import: ../../packages/cs-thesis/cs-thesis
 @require: stdjareport
 @require: math
 @require: itemize
