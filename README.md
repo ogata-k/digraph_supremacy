@@ -6,3 +6,6 @@
 # どんなものを書いたか
 * [クイバーの表現とその上のホモロジー代数(未完)](/project/quiver_hom/quiver_hom.pdf)
 * [有向グラフの基本(未完、ブログのまとめ)](/project/basis_of_digraph/basis_of_digraph.pdf)
+* [クイバーの表現という手法について(要約)](/project/sotugyou/卒業抄録.pdf)
+* [有向閉路を持たない有限クイバーの有限次元表現の圏におけるExt群の決定](/project/sotugyou/卒業論文.pdf)
+
